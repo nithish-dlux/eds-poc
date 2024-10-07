@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://cds.fddev.co/dist/resources/assets/main.css"
+/>
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header theme--grey-dark">
+        <div class="flex items-center justify-between h-16 h-container md:h-auto">
+          <div class="header__container">
+            <a href="#" title="Cartology">
+              <svg
+                class="header__logo"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 552 128"
+              >
+                <path
+                  d="M532.07 66.103h-21.195a10.155 10.155 0 0 1-9.491-6.515l-13.54-34.507h-24.042a10.255 10.255 0 0 1-8.596-4.572 10.246 10.246 0 0 1-.895-9.692l1.961-4.618a10.217 10.217 0 0 1 9.491-6.326h13.382a10.19 10.19 0 0 1 9.49 6.516l4.492 11.07h48.75a10.186 10.186 0 0 1 9.68 13.568l-9.49 28.055a10.25 10.25 0 0 1-9.997 7.021Zm-36.159-41.117 12.433 31.629a2.689 2.689 0 0 0 2.531 1.708h21.195a2.655 2.655 0 0 0 2.531-1.803l9.68-28.086a2.592 2.592 0 0 0-.348-2.436 2.656 2.656 0 0 0-2.214-1.138l-45.808.126Zm-30.18-17.553a2.69 2.69 0 0 0-2.467 1.644l-1.993 4.586a2.654 2.654 0 0 0 .253 2.562 2.557 2.557 0 0 0 2.246 1.234h21.101l-3.164-8.287a2.657 2.657 0 0 0-2.499-1.74h-13.477Z"
+                  fill="#A5C843"
+                ></path>
+                <path
+                  d="M29.2 43.173a27.4 27.4 0 0 1 25.086 14.485 2.087 2.087 0 0 1-.855 3.163l-3.163 1.582a2.153 2.153 0 0 1-3.163-.854 19.675 19.675 0 0 0-17.906-10.47c-12.053 0-20.563 9.742-20.563 22.14 0 12.399 8.51 22.14 20.563 22.14a19.68 19.68 0 0 0 17.874-10.816 2.151 2.151 0 0 1 3.163-.854L53.4 85.27a2.087 2.087 0 0 1 .854 3.163 27.393 27.393 0 0 1-25.055 14.422 28.952 28.952 0 0 1-20.941-8.684A28.939 28.939 0 0 1 0 73.06a28.966 28.966 0 0 1 17.825-27.664A28.982 28.982 0 0 1 29.2 43.173ZM87.502 43.173a23.383 23.383 0 0 1 21.196 12.24V46.81a2.117 2.117 0 0 1 2.088-2.056h4.366a2.025 2.025 0 0 1 1.961 2.056v52.345a2.028 2.028 0 0 1-1.961 2.056h-4.366a2.12 2.12 0 0 1-2.088-2.056V90.52a23.471 23.471 0 0 1-21.195 12.335 28.46 28.46 0 0 1-20.618-8.801 28.464 28.464 0 0 1-7.854-20.993 28.46 28.46 0 0 1 17.237-27.594 28.477 28.477 0 0 1 11.234-2.294Zm.697 51.839c11.926 0 20.562-9.742 20.562-22.14 0-12.399-8.636-22.14-20.563-22.14-11.926 0-20.594 9.488-20.594 22.14 0 12.651 8.605 22.14 20.594 22.14ZM154.632 44.628a1.96 1.96 0 0 1 1.961 2.056v4.396a1.808 1.808 0 0 1-.492 1.369 1.797 1.797 0 0 1-1.342.56h-2.088c-8.637 0-15.438 5.124-15.438 19.357V99.28a1.992 1.992 0 0 1-1.962 1.93h-4.523a2.12 2.12 0 0 1-2.088-2.056V46.81a2.117 2.117 0 0 1 2.088-2.056h4.017a2.088 2.088 0 0 1 1.93 2.056v8.413a16.919 16.919 0 0 1 15.817-10.595h2.12ZM202.686 95.265a1.94 1.94 0 0 1 .411 1.473 1.937 1.937 0 0 1-.791 1.31 19.746 19.746 0 0 1-12.654 4.017 15.434 15.434 0 0 1-11.981-4.53 15.446 15.446 0 0 1-4.438-12.013V51.935h-8.889a2.056 2.056 0 0 1-1.961-2.088v-3.163a2.022 2.022 0 0 1 1.961-2.055h8.763v-18.25a2.15 2.15 0 0 1 2.056-2.087h4.397a2.024 2.024 0 0 1 1.93 2.087v18.376h18.159a1.998 1.998 0 0 1 1.802 1.288c.093.245.136.506.127.768v3.163a2.02 2.02 0 0 1-1.929 2.087H181.49v32.135a9.167 9.167 0 0 0 5.469 9.462 9.178 9.178 0 0 0 3.8.754 14.114 14.114 0 0 0 6.802-1.835c1.487-.98 2.689-.98 3.543.253l1.582 2.436Z"
+                  fill="#fff"
+                ></path>
+                <path
+                  d="M233.72 43.268a29.046 29.046 0 0 1 27.091 18.39 29.042 29.042 0 0 1 2.013 11.34 29.152 29.152 0 0 1-8.19 21.238 29.167 29.167 0 0 1-32.345 6.571 29.167 29.167 0 0 1-15.831-16.358A29.152 29.152 0 0 1 204.521 73a29.026 29.026 0 0 1 8.311-21.04 29.04 29.04 0 0 1 20.888-8.691Zm0 51.744c12.053 0 20.594-9.742 20.594-22.14 0-12.399-8.541-22.14-20.594-22.14s-20.689 9.488-20.689 22.14c0 12.651 8.509 22.14 20.689 22.14ZM271.239 87.579v-67.97a2.12 2.12 0 0 1 2.056-2.055h4.398a2.024 2.024 0 0 1 1.929 2.056v67.02a6.322 6.322 0 0 0 4.292 7.195 6.327 6.327 0 0 0 3.016.206h2.816a2.06 2.06 0 0 1 1.908 1.291c.102.253.152.524.148.797v2.91a2.216 2.216 0 0 1-2.31 2.182h-4.618c-8.036 0-13.635-4.017-13.635-13.632ZM322.108 43.268a29.046 29.046 0 0 1 27.091 18.39 29.024 29.024 0 0 1 2.013 11.34 29.152 29.152 0 0 1-8.19 21.238 29.167 29.167 0 0 1-32.345 6.571 29.167 29.167 0 0 1-15.831-16.358A29.152 29.152 0 0 1 292.909 73a29.026 29.026 0 0 1 8.311-21.04 29.045 29.045 0 0 1 20.888-8.691Zm0 51.744c12.053 0 20.594-9.742 20.594-22.14 0-12.399-8.541-22.14-20.594-22.14s-20.689 9.488-20.689 22.14c0 12.651 8.51 22.14 20.689 22.14ZM407.333 101.59V90.394a23.445 23.445 0 0 1-21.196 12.05c-15.817 0-28.471-12.05-28.471-29.572a28.45 28.45 0 0 1 7.925-20.869 28.478 28.478 0 0 1 20.546-8.735 23.605 23.605 0 0 1 21.291 12.303V46.81a2.116 2.116 0 0 1 2.056-2.056h4.397a2.023 2.023 0 0 1 1.962 2.056v54.907c0 15.213-10.377 26.283-29.105 26.283-15.343 0-24.707-7.654-27.269-18.028a1.617 1.617 0 0 1 .681-1.819c.197-.125.417-.206.648-.237l4.397-1.202a1.866 1.866 0 0 1 2.436 1.329c1.582 6.578 7.656 12.651 19.329 12.651 13.666.126 20.373-7.907 20.373-19.104Zm-20.563-6.705c12.053 0 20.563-9.488 20.563-22.14 0-12.651-8.51-21.918-20.563-21.918-12.053 0-20.594 9.488-20.594 21.918s8.668 22.14 20.594 22.14ZM419.987 122.75a2.248 2.248 0 0 1 0-3.163l1.961-2.183a2.348 2.348 0 0 1 3.385 0 11.358 11.358 0 0 0 7.941 3.163c5.093 0 8.13-4.491 9.49-8.381l4.113-11.102h-2.31a2.06 2.06 0 0 1-2.056-1.391l-19.234-52.567a1.68 1.68 0 0 1 .169-1.58 1.677 1.677 0 0 1 1.413-.729h5.599a2.532 2.532 0 0 1 2.309 1.93l16.925 47.6 16.45-47.442a2.565 2.565 0 0 1 2.436-1.93h5.347a1.552 1.552 0 0 1 1.655 1.51c.007.28-.062.556-.2.8l-24.581 67.779c-2.689 7.559-8.035 13.157-17.399 13.157a17.994 17.994 0 0 1-13.413-5.471Z"
+                  fill="#A5C843"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="header__navigation-desktop">
+            <nav class="navigation-desktop" aria-label="navigation">
+              <ul class="navigation-desktop__list">
+                <li class="navigation-desktop__list-item">
+                  <button
+                    title="About"
+                    data-modal-trigger="navigation"
+                    data-modal-trigger-data='{"id":"991d4a7f8efcc73113c4793dec5bc53d"}'
+                    class="navigation-desktop__list-action navigation-desktop__list-action--button"
+                  >
+                    <span class="navigation-desktop__list-wrapper">
+                      <span class="navigation-desktop__list-label">About</span>
+                      <span class="navigation-desktop__list-icon">
+                        <svg
+                          class="navigation-desktop__list-svg"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M9.293 18.707a1 1 0 0 1 0-1.414L14.586 12 9.293 6.707a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414 0z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </span>
+                    </span>
+                  </button>
+                </li>
+                <li class="navigation-desktop__list-item">
+                  <a
+                    data-desktop-navigation-action=""
+                    class="navigation-desktop__list-action navigation-desktop__list-action--link"
+                    href="#"
+                  >
+                    <span class="navigation-desktop__list-wrapper">
+                      <span class="navigation-desktop__list-label">Cartifacts</span>
+                    </span>
+                  </a>
+                </li>
+                <li class="navigation-desktop__list-item">
+                  <button
+                    title="Case Studies and Insights"
+                    data-modal-trigger="navigation"
+                    data-modal-trigger-data='{"id":"0bc338e65d93a098e0a25cec399b81d4"}'
+                    class="navigation-desktop__list-action navigation-desktop__list-action--button"
+                  >
+                    <span class="navigation-desktop__list-wrapper">
+                      <span class="navigation-desktop__list-label">
+                        Case Studies and Insights
+                      </span>
+                      <span class="navigation-desktop__list-icon">
+                        <svg
+                          class="navigation-desktop__list-svg"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M9.293 18.707a1 1 0 0 1 0-1.414L14.586 12 9.293 6.707a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414 0z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </span>
+                    </span>
+                  </button>
+                </li>
+                <li class="navigation-desktop__list-item">
+                  <a
+                    data-desktop-navigation-action=""
+                    class="navigation-desktop__list-action navigation-desktop__list-action--link"
+                    href="#"
+                  >
+                    <span class="navigation-desktop__list-wrapper">
+                      <span class="navigation-desktop__list-label">News</span>
+                    </span>
+                  </a>
+                </li>
+                <li class="navigation-desktop__list-item">
+                  <a
+                    data-desktop-navigation-action=""
+                    class="navigation-desktop__list-action navigation-desktop__list-action--link"
+                    href="#"
+                  >
+                    <span class="navigation-desktop__list-wrapper">
+                      <span class="navigation-desktop__list-label">Careers</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div data-toggle-target="" class="header__navigation-mobile">
+            <div class="header__navigation-container">
+              <div class="">
+                <nav
+                  class="navigation-mobile theme theme--grey-dark"
+                  aria-label="navigation"
+                >
+                  <ul class="navigation-mobile__list">
+                    <li class="navigation-mobile__list-item">
+                      <button
+                        data-mobile-navigation-action=""
+                        class="navigation-mobile__list-action navigation-mobile__list-action--button"
+                      >
+                        <span class="navigation-mobile__list-label">About</span>
+                        <span class="navigation-mobile__list-icon">
+                          <svg
+                            class="navigation-mobile__list-svg"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M9.293 18.707a1 1 0 0 1 0-1.414L14.586 12 9.293 6.707a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414 0z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </span>
+                      </button>
+                      <div
+                        data-mobile-navigation-child=""
+                        class="navigation-mobile__child-container"
+                      >
+                        <div class="navigation-mobile__child-header">
+                          <button
+                            data-menu-back-state=""
+                            class="navigation-mobile__child-header-button"
+                          >
+                            <span class="navigation-mobile__child-header-icon">
+                              <svg
+                                class="navigation-mobile__child-header-svg"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M9.293 18.707a1 1 0 0 1 0-1.414L14.586 12 9.293 6.707a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414 0z"
+                                  fill="currentColor"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="navigation-mobile__child-header-label">
+                              Back
+                            </span>
+                          </button>
+                        </div>
+                        <div class="navigation-mobile__menu-block-container">
+                          <nav>
+                            <ul class="navigation-mobile__child-items">
+                              <li class="navigation-mobile__child-item">
+                                <a
+                                  class="navigation-mobile__child-item-link"
+                                  href="#"
+                                >
+                                  <span
+                                    class="navigation-mobile__child-item-link-heading"
+                                  >
+                                    About Us
+                                  </span>
+                                  <span
+                                    class="navigation-mobile__child-item-link-description"
+                                  >
+                                    Cartology is a leading Australian retail media
+                                    business, providing data-led advertising solutions
+                                    to connect brands with Woolworths Group customers.
+                                    <br />
+                                  </span>
+                                </a>
+                              </li>
+                              <li class="navigation-mobile__child-item">
+                                <a
+                                  class="navigation-mobile__child-item-link"
+                                  href="#"
+                                >
+                                  <span
+                                    class="navigation-mobile__child-item-link-heading"
+                                  >
+                                    Meet the team
+                                  </span>
+                                  <span
+                                    class="navigation-mobile__child-item-link-description"
+                                  >
+                                    Fostering strong growth and collaboration at
+                                    Cartology, the leadership team brings together a
+                                    wide range of experience to shape the future of
+                                    retail media.
+                                  </span>
+                                </a>
+                              </li>
+                              <li class="navigation-mobile__child-item">
+                                <a
+                                  class="navigation-mobile__child-item-link"
+                                  href="#"
+                                >
+                                  <span
+                                    class="navigation-mobile__child-item-link-heading"
+                                  >
+                                    What is retail media?
+                                  </span>
+                                  <span
+                                    class="navigation-mobile__child-item-link-description"
+                                  >
+                                    Find out more about the evolving advertising
+                                    platform that is retail media, underpinned by
+                                    first party customer insight.
+                                  </span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="navigation-mobile__list-item">
+                      <a
+                        data-mobile-navigation-action=""
+                        class="navigation-mobile__list-action navigation-mobile__list-action--link"
+                        href="#"
+                      >
+                        <span class="navigation-mobile__list-label">Cartifacts</span>
+                      </a>
+                    </li>
+                    <li class="navigation-mobile__list-item">
+                      <button
+                        data-mobile-navigation-action=""
+                        class="navigation-mobile__list-action navigation-mobile__list-action--button"
+                      >
+                        <span class="navigation-mobile__list-label">
+                          Case Studies and Insights
+                        </span>
+                        <span class="navigation-mobile__list-icon">
+                          <svg
+                            class="navigation-mobile__list-svg"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M9.293 18.707a1 1 0 0 1 0-1.414L14.586 12 9.293 6.707a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414 0z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </span>
+                      </button>
+                      <div
+                        data-mobile-navigation-child=""
+                        class="navigation-mobile__child-container"
+                      >
+                        <div class="navigation-mobile__child-header">
+                          <button
+                            data-menu-back-state=""
+                            class="navigation-mobile__child-header-button"
+                          >
+                            <span class="navigation-mobile__child-header-icon">
+                              <svg
+                                class="navigation-mobile__child-header-svg"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M9.293 18.707a1 1 0 0 1 0-1.414L14.586 12 9.293 6.707a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414 0z"
+                                  fill="currentColor"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="navigation-mobile__child-header-label">
+                              Back
+                            </span>
+                          </button>
+                        </div>
+                        <div class="navigation-mobile__menu-block-container">
+                          <nav>
+                            <ul class="navigation-mobile__child-items">
+                              <li class="navigation-mobile__child-item">
+                                <a
+                                  class="navigation-mobile__child-item-link"
+                                  href="#"
+                                >
+                                  <span
+                                    class="navigation-mobile__child-item-link-heading"
+                                  >
+                                    Case Studies
+                                  </span>
+                                  <span
+                                    class="navigation-mobile__child-item-link-description"
+                                  >
+                                    Success stories and results from leading brands
+                                    who have achieved real customer impact with retail
+                                    media.
+                                  </span>
+                                </a>
+                              </li>
+                              <li class="navigation-mobile__child-item">
+                                <a
+                                  class="navigation-mobile__child-item-link"
+                                  href="#"
+                                >
+                                  <span
+                                    class="navigation-mobile__child-item-link-heading"
+                                  >
+                                    Customer Research and Insights
+                                  </span>
+                                  <span
+                                    class="navigation-mobile__child-item-link-description"
+                                  >
+                                    Cartology gets customers like no-one else can. Get
+                                    an in-depth look at the omnichannel customer with
+                                    Cartology research and insights.
+                                  </span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="navigation-mobile__list-item">
+                      <a
+                        data-mobile-navigation-action=""
+                        class="navigation-mobile__list-action navigation-mobile__list-action--link"
+                        href="#"
+                      >
+                        <span class="navigation-mobile__list-label">News</span>
+                      </a>
+                    </li>
+                    <li class="navigation-mobile__list-item">
+                      <a
+                        data-mobile-navigation-action=""
+                        class="navigation-mobile__list-action navigation-mobile__list-action--link"
+                        href="#"
+                      >
+                        <span class="navigation-mobile__list-label">Careers</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="header__navigation-cta" data-menu-action="">
+                <a href="#" class="cta cta--primary cta--full">
+                  <span class="cta__label">Get in touch</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header__actions">
+            <button
+              data-toggle-menu=""
+              class="header__action header__action--hamburger"
+              title="Menu"
+            >
+              <span class="hamburger__box">
+                <span class="hamburger__inner"></span>
+              </span>
+            </button>
+            <div class="header__action header__action--cta">
+              <a href="#" class="cta cta--primary cta--full cta--small">
+                <span class="cta__label">Get in touch</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div
+        class="menu-modal modal"
+        data-modal-container="true"
+        data-menu-modal="true"
+        data-disable-hash="true"
+        id="navigation"
+      >
+        <div>
+          <div data-navigation-modal="true" class="menu-modal__container">
+            <nav id="991d4a7f8efcc73113c4793dec5bc53d" class="menu-modal__nav">
+              <ul class="menu-modal__list">
+                <li class="menu-modal__child-item theme--grey-dark">
+                  <a class="menu-modal__child-item-link" href="#">
+                    <div class="menu-modal__child-item-link-heading">
+                      <span>About Us</span>
+                    </div>
+                    <span class="menu-modal__child-item-link-description">
+                      Cartology is a leading Australian retail media business,
+                      providing data-led advertising solutions to connect brands with
+                      Woolworths Group customers.
+                      <br />
+                    </span>
+                  </a>
+                </li>
+                <li class="menu-modal__child-item theme--grey-dark">
+                  <a class="menu-modal__child-item-link" href="#">
+                    <div class="menu-modal__child-item-link-heading">
+                      <span>Meet the team</span>
+                    </div>
+                    <span class="menu-modal__child-item-link-description">
+                      Fostering strong growth and collaboration at Cartology, the
+                      leadership team brings together a wide range of experience to
+                      shape the future of retail media.
+                    </span>
+                  </a>
+                </li>
+                <li class="menu-modal__child-item theme--grey-dark">
+                  <a class="menu-modal__child-item-link" href="#">
+                    <div class="menu-modal__child-item-link-heading">
+                      <span>What is retail media?</span>
+                    </div>
+                    <span class="menu-modal__child-item-link-description">
+                      Find out more about the evolving advertising platform that is
+                      retail media, underpinned by first party customer insight.
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div data-navigation-modal="true" class="menu-modal__container">
+            <nav id="0bc338e65d93a098e0a25cec399b81d4" class="menu-modal__nav">
+              <ul class="menu-modal__list">
+                <li class="menu-modal__child-item theme--grey-dark">
+                  <a class="menu-modal__child-item-link" href="#">
+                    <div class="menu-modal__child-item-link-heading">
+                      <span>Case Studies</span>
+                    </div>
+                    <span class="menu-modal__child-item-link-description">
+                      Success stories and results from leading brands who have
+                      achieved real customer impact with retail media.
+                    </span>
+                  </a>
+                </li>
+                <li class="menu-modal__child-item theme--grey-dark">
+                  <a class="menu-modal__child-item-link" href="#">
+                    <div class="menu-modal__child-item-link-heading">
+                      <span>Customer Research and Insights</span>
+                    </div>
+                    <span class="menu-modal__child-item-link-description">
+                      Cartology gets customers like no-one else can. Get an in-depth
+                      look at the omnichannel customer with Cartology research and
+                      insights.
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <section class="section standard-hero hero theme--grey-dark">
+        <div class="standard-hero__container">
+          <span></span>
+          <div class="standard-hero__image-block img-toggle">
+            <img
+              class="img--mob img--mobile-hide"
+              srcset="../../images/backgrounds/dummy.jpg"
+              src="../../images/backgrounds/dummy.jpg"
+              width="452"
+              height="440"
+              alt=""
+              loading="eager"
+            />
+            <img
+              class="img--tab img--desk"
+              srcset="../../images/backgrounds/dummy.jpg"
+              src="../../images/backgrounds/dummy.jpg"
+              width="1536"
+              height="976"
+              alt=""
+              loading="eager"
+            />
+          </div>
+        </div>
+        <div class="h-container">
+          <div class="standard-hero__text-block">
+            <div class="standard-hero__breadcrumbs theme--grey-dark">
+              <div class="breadcrumbs">
+                <nav
+                  role="navigation"
+                  class="breadcrumbs__nav"
+                  itemscope=""
+                  itemtype="http://schema.org/Breadcrumb"
+                >
+                  <ul
+                    class="breadcrumbs__list"
+                    itemscope=""
+                    itemtype="http://schema.org/BreadcrumbList"
+                  >
+                    <li
+                      class="breadcrumbs__list-item"
+                      itemprop="itemListElement"
+                      itemscope=""
+                      itemtype="http://schema.org/ListItem"
+                    >
+                      <a itemprop="item" class="breadcrumbs__list-item-link" href="">
+                        Home
+                      </a>
+                    </li>
+                    <div class="breadcrumbs__divider">
+                      <div class="flex items-center justify-center">
+                        <svg
+                          class="icon"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M9.293 18.707a1 1 0 0 1 0-1.414L14.586 12 9.293 6.707a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414 0z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <li
+                      class="breadcrumbs__list-item"
+                      itemprop="itemListElement"
+                      itemscope=""
+                      itemtype="http://schema.org/ListItem"
+                    >
+                      <span itemprop="item" class="breadcrumbs__list-item-span">
+                        About Us
+                      </span>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="standard-hero__text-block-container">
+              <h1 class="standard-hero__heading">About Cartology</h1>
+              <div class="standard-hero__description">
+                Cartology is a leading Australian retail media business, providing
+                data-led advertising solutions to connect brands with Woolworths Group
+                customers end to end on their shopping journey.
+              </div>
+              <div class="standard-hero__cta-block">
+                <a href="#" class="cta cta--primary">
+                  <span class="cta__label">Find out how</span>
+                </a>
+                <a href="#" class="cta cta--secondary">
+                  <span class="cta__label">About us</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section stats-callout">
+        <svg
+          class="stats-callout__bg"
+          viewBox="0 0 1415 286"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M560.962 616.04H322.528a114.255 114.255 0 0 1-64.774-20.059 114.222 114.222 0 0 1-41.988-53.235L63.453 154.571H-207.01a115.313 115.313 0 0 1-96.69-51.429A115.259 115.259 0 0 1-313.772-5.893l22.064-51.947a114.934 114.934 0 0 1 42.526-51.859 114.967 114.967 0 0 1 64.236-19.3h150.534a114.61 114.61 0 0 1 64.73 20.122A114.572 114.572 0 0 1 72.35-55.705l50.533 124.53h548.4a114.605 114.605 0 0 1 94.109 48.034 114.556 114.556 0 0 1 14.788 104.602L673.418 537.053a115.275 115.275 0 0 1-43.171 58.075 115.314 115.314 0 0 1-69.285 20.912ZM154.2 153.504l139.858 355.797a30.247 30.247 0 0 0 28.47 19.213h238.434a29.896 29.896 0 0 0 28.47-20.28l108.897-315.948a29.171 29.171 0 0 0-3.915-27.397 29.896 29.896 0 0 0-24.911-12.808L154.2 153.504ZM-185.302-43.964a30.25 30.25 0 0 0-27.758 18.502l-22.42 51.59a29.873 29.873 0 0 0 2.847 28.82 28.82 28.82 0 0 0 25.267 13.876H30.001L-5.586-24.395A29.887 29.887 0 0 0-33.7-43.964h-151.602Z"
+            fill="currentColor"
+          ></path>
+        </svg>
+        <div class="stats-callout__wrap">
+          <div class="h-container">
+            <div
+              class="stats-callout__stats stats-callout__stats--active"
+              data-counter-container=""
+            >
+              <div class="stats-callout__stat">
+                <p class="stats-callout__stat-heading">
+                  <span>+</span>
+                  <span data-counter="3.9">3.9</span>
+                  <span>M</span>
+                </p>
+                <p class="stats-callout__stat-label">monthly Metro transactions</p>
+              </div>
+              <div class="stats-callout__stat">
+                <p class="stats-callout__stat-heading">
+                  <span>+</span>
+                  <span data-counter="3600">3,600</span>
+                </p>
+                <p class="stats-callout__stat-label">digital screens</p>
+              </div>
+              <div class="stats-callout__stat">
+                <p class="stats-callout__stat-heading">
+                  <span>+</span>
+                  <span data-counter="14.1">14.1</span>
+                  <span>M</span>
+                </p>
+                <p class="stats-callout__stat-label">Everyday Rewards members</p>
+              </div>
+              <div class="stats-callout__stat">
+                <p class="stats-callout__stat-heading">
+                  <span>+</span>
+                  <span data-counter="35">35</span>
+                  <span>M</span>
+                </p>
+                <p class="stats-callout__stat-label">
+                  monthly visits to woolworths.com.au
+                  <br />
+                  (web and app)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section intro-block intro-block--has-image intro-block--center">
+        <div class="intro-block__wrap">
+          <img
+            class="intro-block__image"
+            srcset="../../images/backgrounds/dummy.jpg"
+            src="../../images/backgrounds/dummy.jpg"
+            width="1536"
+            height="976"
+            alt=""
+            loading="lazy"
+          />
+          <div class="h-container intro-block__container">
+            <div class="intro-block__content">
+              <h2 class="intro-block__heading">We get customers</h2>
+              <div class="intro-block__description">
+                Cartology is a leading Australian retail media business, providing
+                data-led advertising solutions to connect brands with Woolworths Group
+                customers end to end on their shopping journey.
+              </div>
+              <div class="intro-block__cta_block">
+                <a href="#" class="cta cta--primary">
+                  <span class="cta__label">Learn about Cartology</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section overflow-hidden pt-mob-remove pb-mob-remove">
+        <div class="image-left-right image-left-right--image-right theme--white">
+          <div
+            class="h-container image-left-right__container image-left-right__container--content"
+          >
+            <div class="image-left-right__image-block">
+              <img
+                class="image-left-right__image"
+                srcset="../../images/backgrounds/dummy.jpg"
+                src="../../images/backgrounds/dummy.jpg"
+                width="768"
+                height="680"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+            <div class="image-left-right__text-block">
+              <span class="image-left-right__subheading">Why Cartology?</span>
+              <h3 class="image-left-right__heading">
+                <span>
+                  Drive real customer impact in the moments that matter most
+                </span>
+              </h3>
+              <div class="image-left-right__description">
+                <p>
+                  We position your brand where it needs to be on the customer’s path
+                  to purchase, including the critical final step of the shopping
+                  journey to connect with customers in a way that nobody else can.
+                </p>
+              </div>
+              <div class="image-left-right__cta-block">
+                <a href="#" class="cta cta--primary">
+                  <span class="cta__label">Why Cartology</span>
+                </a>
+                <button
+                  class="cta cta--video"
+                  data-modal-trigger="495d554fe4c464268c31ac58f7d59800"
+                >
+                  <span class="cta__icon">
+                    <svg
+                      class="icon"
+                      viewBox="0 0 28 32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M27 14.268c1.333.77 1.333 2.694 0 3.464L3 31.589c-1.333.77-3-.193-3-1.733V2.144C0 .604 1.667-.358 3 .412l24 13.856Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="cta__label">Watch the video</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="h-container image-left-right__container image-left-right__container--image"
+          >
+            <div
+              class="image-left-right__image-block image-left-right__image-block--desktop"
+            >
+              <img
+                class="image-left-right__image"
+                srcset="../../images/backgrounds/dummy.jpg"
+                src="../../images/backgrounds/dummy.jpg"
+                width="768"
+                height="680"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="video_modal"
+          data-modal-container="true"
+          data-disable-hash="true"
+          id="495d554fe4c464268c31ac58f7d59800"
+        >
+          <div class="flex items-center w-full h-full">
+            <div class="video_modal__wrapper">
+              <video autoplay="">
+                <source
+                  src="https://cartologystg.wpengine.com/wp-content/uploads/pexels-life-on-super-9154023.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section case-studies" data-case-studies-carousel="true">
+        <div class="swiper case-studies__carousel">
+          <div class="swiper-wrapper">
+            <div class="case-studies-carousel swiper-slide">
+              <div class="h-container case-studies-carousel__container theme--white">
+                <div class="case-studies-carousel__image-block">
+                  <img
+                    class="case-studies-carousel__image"
+                    srcset="../../images/backgrounds/dummy.jpg"
+                    src="../../images/backgrounds/dummy.jpg"
+                    width="768"
+                    height="680"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="case-studies-carousel__text-block">
+                  <span class="case-studies-carousel__subheading">
+                    Case Study
+                    <span class="case-studies-carousel__divider"></span>
+                  </span>
+                  <h4 class="case-studies-carousel__heading">
+                    <span>Nandos Peri-Peri Sauce</span>
+                  </h4>
+                  <div class="case-studies-carousel__description wysiwyg">
+                    A content-led omnichannel solution, inspiring customers to cook,
+                    splash and spice up their meals.
+                  </div>
+                  <div class="case-studies-carousel__cta-block">
+                    <a href="#" class="cta cta--primary">
+                      <span class="cta__label">Read more</span>
+                    </a>
+                    <a href="#" class="cta cta--text-link">
+                      <span class="cta__label">View all case studies</span>
+                    </a>
+                  </div>
+                  <nav class="case-studies-carousel__nav">
+                    <div class="swiper-nav">
+                      <button class="swiper-nav__arrow button-prev">
+                        <svg
+                          class="w-full h-full"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M7.793 16.707a1 1 0 0 0 1.414-1.414l-1.414 1.414zM4 11.5l-.707-.707a1 1 0 0 0 0 1.414L4 11.5zm5.207-3.793a1 1 0 0 0-1.414-1.414l1.414 1.414zM20 12.5a1 1 0 1 0 0-2v2zM9.207 15.293l-4.5-4.5-1.414 1.414 4.5 4.5 1.414-1.414zm-4.5-3.086l4.5-4.5-1.414-1.414-4.5 4.5 1.414 1.414zM4 12.5h16v-2H4v2z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </button>
+                      <button class="swiper-nav__arrow button-next">
+                        <svg
+                          class="w-full h-full"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M16.207 6.293a1 1 0 1 0-1.414 1.414l1.414-1.414zM20 11.5l.707.707a1 1 0 0 0 0-1.414L20 11.5zm-5.207 3.793a1 1 0 0 0 1.414 1.414l-1.414-1.414zM4 10.5a1 1 0 1 0 0 2v-2zm10.793-2.793l4.5 4.5 1.414-1.414-4.5-4.5-1.414 1.414zm4.5 3.086l-4.5 4.5 1.414 1.414 4.5-4.5-1.414-1.414zM20 10.5H4v2h16v-2z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="swiper-pagination">
+                      <span
+                        class="swiper-pagination-progressbar-fill-custom"
+                        style="width: 50%;"
+                      ></span>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="case-studies-carousel swiper-slide">
+              <div class="h-container case-studies-carousel__container theme--white">
+                <div class="case-studies-carousel__image-block">
+                  <img
+                    class="case-studies-carousel__image"
+                    srcset="../../images/backgrounds/dummy.jpg"
+                    src="../../images/backgrounds/dummy.jpg"
+                    width="768"
+                    height="680"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="case-studies-carousel__text-block">
+                  <span class="case-studies-carousel__subheading">
+                    Case Study
+                    <span class="case-studies-carousel__divider"></span>
+                  </span>
+                  <h4 class="case-studies-carousel__heading">
+                    <span>Wonder Recycling Rewards</span>
+                  </h4>
+                  <div class="case-studies-carousel__description wysiwyg">
+                    Turning insight into action to break measurement success records,
+                    sell more and boost recycling initiatives.
+                  </div>
+                  <div class="case-studies-carousel__cta-block">
+                    <a href="#" class="cta cta--primary">
+                      <span class="cta__label">Read more</span>
+                    </a>
+                    <a href="#" class="cta cta--text-link">
+                      <span class="cta__label">View all case studies</span>
+                    </a>
+                  </div>
+                  <nav class="case-studies-carousel__nav">
+                    <div class="swiper-nav">
+                      <button class="swiper-nav__arrow button-prev">
+                        <svg
+                          class="w-full h-full"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M7.793 16.707a1 1 0 0 0 1.414-1.414l-1.414 1.414zM4 11.5l-.707-.707a1 1 0 0 0 0 1.414L4 11.5zm5.207-3.793a1 1 0 0 0-1.414-1.414l1.414 1.414zM20 12.5a1 1 0 1 0 0-2v2zM9.207 15.293l-4.5-4.5-1.414 1.414 4.5 4.5 1.414-1.414zm-4.5-3.086l4.5-4.5-1.414-1.414-4.5 4.5 1.414 1.414zM4 12.5h16v-2H4v2z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </button>
+                      <button class="swiper-nav__arrow button-next">
+                        <svg
+                          class="w-full h-full"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M16.207 6.293a1 1 0 1 0-1.414 1.414l1.414-1.414zM20 11.5l.707.707a1 1 0 0 0 0-1.414L20 11.5zm-5.207 3.793a1 1 0 0 0 1.414 1.414l-1.414-1.414zM4 10.5a1 1 0 1 0 0 2v-2zm10.793-2.793l4.5 4.5 1.414-1.414-4.5-4.5-1.414 1.414zm4.5 3.086l-4.5 4.5 1.414 1.414 4.5-4.5-1.414-1.414zM20 10.5H4v2h16v-2z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="swiper-pagination">
+                      <span
+                        class="swiper-pagination-progressbar-fill-custom"
+                        style="width: 100%;"
+                      ></span>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-subscribe-callout="" class="section subscribe-callout">
+        <div class="lg:py-28 theme--grey-dark">
+          <div class="h-container subscribe-callout__container">
+            <div class="subscribe-callout__image-block">
+              <img
+                class="subscribe-callout__image"
+                srcset="../../images/backgrounds/dummy.jpg"
+                src="../../images/backgrounds/dummy.jpg"
+                width="768"
+                height="680"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+            <div class="subscribe-callout__text-block">
+              <h3 class="subscribe-callout__heading">
+                <span>Get a copy of the Retail Media Playbook</span>
+              </h3>
+              <div class="subscribe-callout__description">
+                <span>
+                  <p>
+                    Subscribe to get a copy of the Retail Media Playbook and keep up
+                    to date with the latest from Cartology.
+                  </p>
+                </span>
+              </div>
+              <div class="subscribe-callout__form-block">
+                <form class="subscribe-callout__form subscribe-form" novalidate="">
+                  <input
+                    class="subscribe-form__input"
+                    placeholder="Email*"
+                    required=""
+                    type="text"
+                    name="email"
+                  />
+                  <div class="subscribe-form__submit">
+                    <button
+                      disabled=""
+                      data-modal-trigger="subscription_modal"
+                      type="button"
+                      class="cta cta--primary"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div
+        class="subscribe-callout__modal"
+        data-modal-container="true"
+        data-disable-hash="true"
+        id="subscription_modal"
+      >
+        <div class="subscription-modal theme theme--light">
+          <button data-modal-close="" class="modal-close subscription-modal__close">
+            <span class="svg-icon">
+              <svg
+                class="w-6 h-6 text-inherit"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  fill="currentColor"
+                  d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"
+                ></path>
+              </svg>
+            </span>
+          </button>
+          <div
+            data-confirm-step=""
+            id="confirm-step-1"
+            class="subscription-modal__step"
+          >
+            <h4 class="subscription-modal__heading">Confirm subscription</h4>
+            <div class="subscription-modal__content">
+              <p>
+                By clicking subscribe, I agree to the
+                <a href="#">Cartology Terms and Conditions</a>
+                , which includes how Cartology may send me promotional and other
+                messages, and how I can opt out or unsubscribe from these messages.
+              </p>
+              <p>
+                View our
+                <a href="#">Collection Notice</a>
+                and
+                <a href="#">Privacy Policy</a>
+                to understand more about how we collect, use and manage your personal
+                information.
+              </p>
+            </div>
+            <div class="subscription-modal__actions">
+              <button
+                data-confirm-subscription=""
+                type="button"
+                class="cta cta--primary"
+              >
+                <span class="text-sm cta__label">Confirm Subscription</span>
+              </button>
+              <button
+                type="button"
+                class="mt-4 text-sm underline text-charcoal-500"
+                data-modal-close=""
+              >
+                <span class="">Cancel</span>
+              </button>
+            </div>
+          </div>
+          <div
+            data-confirm-step=""
+            id="confirm-step-2"
+            class="subscription-modal__step"
+            style="display: none;"
+          >
+            <h4 class="subscription-modal__heading">Thank you for subscribing</h4>
+            <div class="subscription-modal__content">
+              <span>Stay tuned for the latest insights in your inbox</span>
+            </div>
+            <div class="subscription-modal__actions">
+              <button type="button" class="cta cta--primary" data-modal-close="">
+                <span class="text-sm cta__label">Close</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="section related-resources latest-news">
+        <div class="h-container">
+          <div class="related-resources__container">
+            <div class="related-resources__text-block">
+              <h2 class="related-resources__heading">
+                <span>Latest news from Cartology</span>
+              </h2>
+              <a href="#" class="cta cta--text-link" target="">
+                <span class="cta__label">View all news</span>
+              </a>
+            </div>
+            <div class="related-resources__tiles-block">
+              <div class="related-resources__tile">
+                <a
+                  class="resource-tile__link"
+                  href="#"
+                  title="The more you know about the customer"
+                >
+                  <div class="resource-tile">
+                    <div class="resource-tile__image-block">
+                      <img
+                        src="../../images/backgrounds/dummy.jpg"
+                        alt="The more you know about the customer"
+                        title="The more you know about the customer"
+                        loading="lazy"
+                        class="resource-tile__image"
+                      />
+                    </div>
+                    <div class="resource-tile__text-block">
+                      <div class="resource-tile__header">
+                        <div class="resource-tile__main-tag">
+                          <span class="eyebrow">Blog</span>
+                        </div>
+                        <div class="resource-tile__date">8 May 2023</div>
+                      </div>
+                      <h5 class="resource-tile__heading">
+                        The more you know about the customer
+                      </h5>
+                      <div class="resource-tile__description">
+                        <span>
+                          After Mumbrella's Retail Marketing Summit in March,
+                          Cartology's Robbie Hills offered a reflection on the days
+                          content and why it is all about the customer.
+                        </span>
+                      </div>
+                      <div class="resource-tile__text-link">
+                        <span class="cta cta--text-link">
+                          <span class="cta__label">Read more</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="related-resources__tile">
+                <a class="resource-tile__link" href="#" title="retail media rising">
+                  <div class="resource-tile">
+                    <div class="resource-tile__image-block">
+                      <img
+                        src="../../images/backgrounds/dummy.jpg"
+                        alt="retail media rising"
+                        title="retail media rising"
+                        loading="lazy"
+                        class="resource-tile__image"
+                      />
+                    </div>
+                    <div class="resource-tile__text-block">
+                      <div class="resource-tile__header">
+                        <div class="resource-tile__main-tag">
+                          <span class="eyebrow">Blog</span>
+                        </div>
+                        <div class="resource-tile__date">23 March 2023</div>
+                      </div>
+                      <h5 class="resource-tile__heading">retail media rising</h5>
+                      <div class="resource-tile__description">
+                        <span>
+                          Retail media is a hot topic as its rise signals an evolving
+                          shift in the customer's shopping experience.
+                        </span>
+                      </div>
+                      <div class="resource-tile__text-link">
+                        <span class="cta cta--text-link">
+                          <span class="cta__label">Read more</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="related-resources__text-link">
+              <a href="#" class="cta cta--text-link cta--mob" target="">
+                <span class="cta__label">View all news</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer theme--blue">
+        <div class="h-container">
+          <div class="footer__main">
+            <div class="footer__general">
+              <div class="footer__logo-block">
+                <a href="#" title="Cartology">
+                  <svg
+                    class="footer__logo"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 552 128"
+                  >
+                    <path
+                      d="M532.07 66.103h-21.195a10.155 10.155 0 0 1-9.491-6.515l-13.54-34.507h-24.042a10.255 10.255 0 0 1-8.596-4.572 10.246 10.246 0 0 1-.895-9.692l1.961-4.618a10.217 10.217 0 0 1 9.491-6.326h13.382a10.19 10.19 0 0 1 9.49 6.516l4.492 11.07h48.75a10.186 10.186 0 0 1 9.68 13.568l-9.49 28.055a10.25 10.25 0 0 1-9.997 7.021Zm-36.159-41.117 12.433 31.629a2.689 2.689 0 0 0 2.531 1.708h21.195a2.655 2.655 0 0 0 2.531-1.803l9.68-28.086a2.592 2.592 0 0 0-.348-2.436 2.656 2.656 0 0 0-2.214-1.138l-45.808.126Zm-30.18-17.553a2.69 2.69 0 0 0-2.467 1.644l-1.993 4.586a2.654 2.654 0 0 0 .253 2.562 2.557 2.557 0 0 0 2.246 1.234h21.101l-3.164-8.287a2.657 2.657 0 0 0-2.499-1.74h-13.477Z"
+                      fill="#A5C843"
+                    ></path>
+                    <path
+                      d="M29.2 43.173a27.4 27.4 0 0 1 25.086 14.485 2.087 2.087 0 0 1-.855 3.163l-3.163 1.582a2.153 2.153 0 0 1-3.163-.854 19.675 19.675 0 0 0-17.906-10.47c-12.053 0-20.563 9.742-20.563 22.14 0 12.399 8.51 22.14 20.563 22.14a19.68 19.68 0 0 0 17.874-10.816 2.151 2.151 0 0 1 3.163-.854L53.4 85.27a2.087 2.087 0 0 1 .854 3.163 27.393 27.393 0 0 1-25.055 14.422 28.952 28.952 0 0 1-20.941-8.684A28.939 28.939 0 0 1 0 73.06a28.966 28.966 0 0 1 17.825-27.664A28.982 28.982 0 0 1 29.2 43.173ZM87.502 43.173a23.383 23.383 0 0 1 21.196 12.24V46.81a2.117 2.117 0 0 1 2.088-2.056h4.366a2.025 2.025 0 0 1 1.961 2.056v52.345a2.028 2.028 0 0 1-1.961 2.056h-4.366a2.12 2.12 0 0 1-2.088-2.056V90.52a23.471 23.471 0 0 1-21.195 12.335 28.46 28.46 0 0 1-20.618-8.801 28.464 28.464 0 0 1-7.854-20.993 28.46 28.46 0 0 1 17.237-27.594 28.477 28.477 0 0 1 11.234-2.294Zm.697 51.839c11.926 0 20.562-9.742 20.562-22.14 0-12.399-8.636-22.14-20.563-22.14-11.926 0-20.594 9.488-20.594 22.14 0 12.651 8.605 22.14 20.594 22.14ZM154.632 44.628a1.96 1.96 0 0 1 1.961 2.056v4.396a1.808 1.808 0 0 1-.492 1.369 1.797 1.797 0 0 1-1.342.56h-2.088c-8.637 0-15.438 5.124-15.438 19.357V99.28a1.992 1.992 0 0 1-1.962 1.93h-4.523a2.12 2.12 0 0 1-2.088-2.056V46.81a2.117 2.117 0 0 1 2.088-2.056h4.017a2.088 2.088 0 0 1 1.93 2.056v8.413a16.919 16.919 0 0 1 15.817-10.595h2.12ZM202.686 95.265a1.94 1.94 0 0 1 .411 1.473 1.937 1.937 0 0 1-.791 1.31 19.746 19.746 0 0 1-12.654 4.017 15.434 15.434 0 0 1-11.981-4.53 15.446 15.446 0 0 1-4.438-12.013V51.935h-8.889a2.056 2.056 0 0 1-1.961-2.088v-3.163a2.022 2.022 0 0 1 1.961-2.055h8.763v-18.25a2.15 2.15 0 0 1 2.056-2.087h4.397a2.024 2.024 0 0 1 1.93 2.087v18.376h18.159a1.998 1.998 0 0 1 1.802 1.288c.093.245.136.506.127.768v3.163a2.02 2.02 0 0 1-1.929 2.087H181.49v32.135a9.167 9.167 0 0 0 5.469 9.462 9.178 9.178 0 0 0 3.8.754 14.114 14.114 0 0 0 6.802-1.835c1.487-.98 2.689-.98 3.543.253l1.582 2.436Z"
+                      fill="#fff"
+                    ></path>
+                    <path
+                      d="M233.72 43.268a29.046 29.046 0 0 1 27.091 18.39 29.042 29.042 0 0 1 2.013 11.34 29.152 29.152 0 0 1-8.19 21.238 29.167 29.167 0 0 1-32.345 6.571 29.167 29.167 0 0 1-15.831-16.358A29.152 29.152 0 0 1 204.521 73a29.026 29.026 0 0 1 8.311-21.04 29.04 29.04 0 0 1 20.888-8.691Zm0 51.744c12.053 0 20.594-9.742 20.594-22.14 0-12.399-8.541-22.14-20.594-22.14s-20.689 9.488-20.689 22.14c0 12.651 8.509 22.14 20.689 22.14ZM271.239 87.579v-67.97a2.12 2.12 0 0 1 2.056-2.055h4.398a2.024 2.024 0 0 1 1.929 2.056v67.02a6.322 6.322 0 0 0 4.292 7.195 6.327 6.327 0 0 0 3.016.206h2.816a2.06 2.06 0 0 1 1.908 1.291c.102.253.152.524.148.797v2.91a2.216 2.216 0 0 1-2.31 2.182h-4.618c-8.036 0-13.635-4.017-13.635-13.632ZM322.108 43.268a29.046 29.046 0 0 1 27.091 18.39 29.024 29.024 0 0 1 2.013 11.34 29.152 29.152 0 0 1-8.19 21.238 29.167 29.167 0 0 1-32.345 6.571 29.167 29.167 0 0 1-15.831-16.358A29.152 29.152 0 0 1 292.909 73a29.026 29.026 0 0 1 8.311-21.04 29.045 29.045 0 0 1 20.888-8.691Zm0 51.744c12.053 0 20.594-9.742 20.594-22.14 0-12.399-8.541-22.14-20.594-22.14s-20.689 9.488-20.689 22.14c0 12.651 8.51 22.14 20.689 22.14ZM407.333 101.59V90.394a23.445 23.445 0 0 1-21.196 12.05c-15.817 0-28.471-12.05-28.471-29.572a28.45 28.45 0 0 1 7.925-20.869 28.478 28.478 0 0 1 20.546-8.735 23.605 23.605 0 0 1 21.291 12.303V46.81a2.116 2.116 0 0 1 2.056-2.056h4.397a2.023 2.023 0 0 1 1.962 2.056v54.907c0 15.213-10.377 26.283-29.105 26.283-15.343 0-24.707-7.654-27.269-18.028a1.617 1.617 0 0 1 .681-1.819c.197-.125.417-.206.648-.237l4.397-1.202a1.866 1.866 0 0 1 2.436 1.329c1.582 6.578 7.656 12.651 19.329 12.651 13.666.126 20.373-7.907 20.373-19.104Zm-20.563-6.705c12.053 0 20.563-9.488 20.563-22.14 0-12.651-8.51-21.918-20.563-21.918-12.053 0-20.594 9.488-20.594 21.918s8.668 22.14 20.594 22.14ZM419.987 122.75a2.248 2.248 0 0 1 0-3.163l1.961-2.183a2.348 2.348 0 0 1 3.385 0 11.358 11.358 0 0 0 7.941 3.163c5.093 0 8.13-4.491 9.49-8.381l4.113-11.102h-2.31a2.06 2.06 0 0 1-2.056-1.391l-19.234-52.567a1.68 1.68 0 0 1 .169-1.58 1.677 1.677 0 0 1 1.413-.729h5.599a2.532 2.532 0 0 1 2.309 1.93l16.925 47.6 16.45-47.442a2.565 2.565 0 0 1 2.436-1.93h5.347a1.552 1.552 0 0 1 1.655 1.51c.007.28-.062.556-.2.8l-24.581 67.779c-2.689 7.559-8.035 13.157-17.399 13.157a17.994 17.994 0 0 1-13.413-5.471Z"
+                      fill="#A5C843"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <p>© 2024 Cartology. All rights reserved.</p>
+              <div class="footer__subscribe">
+                <h6 class="footer__menu-heading">Subscribe</h6>
+                <p>Keep up to date with the latest from Cartology</p>
+                <div data-subscribe-callout="" class="relative">
+                  <form
+                    class="footer__subscribe-form subscribe-form subscribe-form--sm"
+                    action="/action_page.php"
+                    novalidate=""
+                  >
+                    <input
+                      class="subscribe-form__input"
+                      placeholder="Email*"
+                      required=""
+                      data-keeper-lock-id="k-ldlif8zdhg"
+                      type="text"
+                      name="email"
+                    />
+                    <button
+                      disabled=""
+                      data-modal-trigger="subscription_modal"
+                      type="button"
+                      class="subscribe-form__submits cta cta--primary"
+                    >
+                      Subscribe
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <hr class="footer__divider lg:hidden" />
+            <div class="footer__nav">
+              <div class="footer__columns">
+                <div class="footer__column">
+                  <h6 class="footer__menu-heading">About</h6>
+                  <nav class="footer__menu">
+                    <a class="footer__menu-link" href="#">What is Retail Media?</a>
+                    <a class="footer__menu-link" href="#">Why Cartology</a>
+                    <a class="footer__menu-link" href="#">About us</a>
+                  </nav>
+                </div>
+                <div class="footer__column">
+                  <h6 class="footer__menu-heading">Case Studies & Insights</h6>
+                  <nav class="footer__menu">
+                    <a class="footer__menu-link" href="#">Case Studies</a>
+                    <a class="footer__menu-link" href="#">
+                      Customer Research & Insights
+                    </a>
+                  </nav>
+                </div>
+                <div class="footer__column">
+                  <h6 class="footer__menu-heading">Ad Solutions</h6>
+                  <nav class="footer__menu">
+                    <a class="footer__menu-link" href="#">Solutions</a>
+                  </nav>
+                </div>
+                <div class="footer__column">
+                  <h6 class="footer__menu-heading">Resources</h6>
+                  <nav class="footer__menu">
+                    <a class="footer__menu-link" href="#">Cartifacts Magazine</a>
+                    <a class="footer__menu-link" href="#">Media Kits</a>
+                    <a class="footer__menu-link" href="#">Ad Specs</a>
+                  </nav>
+                </div>
+                <div class="footer__column">
+                  <h6 class="footer__menu-heading">News</h6>
+                  <nav class="footer__menu">
+                    <a class="footer__menu-link" href="#">Latest News</a>
+                  </nav>
+                </div>
+                <div class="footer__column">
+                  <h6 class="footer__menu-heading">Careers</h6>
+                  <nav class="footer__menu">
+                    <a class="footer__menu-link" href="#">Careers</a>
+                  </nav>
+                </div>
+              </div>
+              <hr class="footer__divider" />
+              <h6 class="footer__menu-heading">Acknowledgement of Country</h6>
+              Cartology acknowledges the many Traditional Owners of the Lands on which
+              we operate, and pay our respects to their Elders past and present as the
+              Custodians of the oldest continuing cultures on the planet. As part of
+              the Woolworths Group, Cartology remains committed to actively
+              contributing to Australia's reconciliation journey.
+            </div>
+          </div>
+          <hr class="footer__divider" />
+          <div class="footer__fine-print">
+            <nav class="footer__legal-links">
+              <a class="footer__menu-link" href="#">Privacy Policy</a>
+              <a class="footer__menu-link" href="#">Collection Notice</a>
+              <a class="footer__menu-link" href="#">Terms of Use</a>
+              <a class="footer__menu-link" href="#">Cookies</a>
+            </nav>
+            <nav class="footer__social-links social-links">
+              <a
+                href="https://www.linkedin.com/company/cartology-part-of-the-woolworths-group/"
+                title="Linkedin"
+                target="_blank"
+                class="social-links__item"
+              >
+                <svg
+                  class="icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M18.663 17.667v-.001h.004v-6.113c0-2.99-.644-5.293-4.14-5.293-1.68 0-2.808.922-3.269 1.796h-.048V6.54H7.895v11.127h3.452v-5.51c0-1.45.275-2.853 2.071-2.853 1.77 0 1.797 1.655 1.797 2.946v5.418h3.448zM2.275 6.54h3.456v11.127H2.275V6.54zM4.001 1A2.002 2.002 0 0 0 2 3.001c0 1.105.897 2.02 2.001 2.02 1.105 0 2.002-.915 2.002-2.02A2.003 2.003 0 0 0 4 1z"
+                  ></path>
+                </svg>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </footer>
+      
+    <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"
+  integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
+  integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script src="https://cds.fddev.co/dist/resources/assets/main.js"></script>
+
+</body>
+</html>
